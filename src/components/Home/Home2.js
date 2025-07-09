@@ -24,17 +24,14 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> C++, Javascript . </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              With hands-on experience in React, Node.js, Express, MongoDB, and MySQL, I specialize in crafting full-stack solutions with clean architecture and responsive design. &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+          
+
               </i>
               <br />
               <br />
