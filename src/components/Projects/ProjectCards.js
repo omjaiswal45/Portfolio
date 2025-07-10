@@ -4,22 +4,24 @@ import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCards(props) {
+function ProjectCards({ imgPath, title, description, ghLink, demoLink, isBlog }) {
   return (
     <Card
       className="shadow-lg border-0 mb-4 d-flex flex-md-row flex-column"
       style={{
-        borderRadius: "16px",
-        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        borderRadius: "20px",
         overflow: "hidden",
+        background: "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)",
+        color: "white",
+        transition: "transform 0.4s ease, box-shadow 0.4s ease",
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.transform = "scale(1.01)";
-        e.currentTarget.style.boxShadow = "0 15px 30px rgba(0,0,0,0.15)";
+        e.currentTarget.style.boxShadow = "0 20px 40px rgba(0,0,0,0.25)";
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.transform = "scale(1)";
-        e.currentTarget.style.boxShadow = "0 5px 15px rgba(0,0,0,0.1)";
+        e.currentTarget.style.boxShadow = "0 10px 20px rgba(0,0,0,0.15)";
       }}
     >
       {/* Image Section */}
@@ -29,18 +31,20 @@ function ProjectCards(props) {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#f8f9fa", // Optional: contrast for light images
+          background: "rgba(255, 255, 255, 0.1)",
+          backdropFilter: "blur(10px)",
+          minHeight: "250px",
         }}
       >
         <Card.Img
-          src={props.imgPath}
+          src={imgPath}
           alt="project"
           style={{
             width: "100%",
             height: "100%",
-            objectFit: "contain", // ✅ prevents image cutting
+            objectFit: "contain",
             padding: "10px",
-            minHeight: "250px",
+            maxHeight: "300px",
           }}
         />
       </div>
@@ -56,19 +60,31 @@ function ProjectCards(props) {
         }}
       >
         <div>
-          <Card.Title style={{ fontSize: "1.6rem", fontWeight: "bold" }}>
-            {props.title}
+          <Card.Title style={{ fontSize: "1.7rem", fontWeight: "bold", marginBottom: "15px" }}>
+            {title}
           </Card.Title>
-          <Card.Text style={{ margin: "15px 0", textAlign: "justify", color: "#333" }}>
-            {props.description}
+          <Card.Text style={{ color: "#f1f1f1", textAlign: "justify", marginBottom: "20px" }}>
+            {description}
           </Card.Text>
         </div>
-        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-          <Button variant="dark" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;{props.isBlog ? "Blog" : "GitHub"}
+        <div style={{ display: "flex", gap: "1px", flexWrap: "wrap" }}>
+          <Button
+            variant="light"
+            href={ghLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Link"
+          >
+            <BsGithub /> &nbsp;{isBlog ? "Blog" : "GitHub"}
           </Button>
-          {!props.isBlog && props.demoLink && (
-            <Button variant="info" href={props.demoLink} target="_blank">
+          {!isBlog && demoLink && (
+            <Button
+              style={{ backgroundColor: "#ffffff", color: "#2575fc", border: "none" }}
+              href={demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Live Demo Link"
+            >
               <CgWebsite /> &nbsp;Demo
             </Button>
           )}

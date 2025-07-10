@@ -7,7 +7,7 @@ import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+// import Certisure from "../../Assets/Projects/Certisure.gif";
 
 function Projects() {
   return (
@@ -27,7 +27,7 @@ function Projects() {
               imgPath="/website_project_animation.gif"
               isBlog={false}
               title="VideoTube"
-              description="A responsive YouTube clone built with React, Redux Toolkit, and TailwindCSS, featuring real-time search suggestions and video playback using YouTube Data APIs."
+              description="A responsive YouTube clone built with React, Redux Toolkit featuring real-time search suggestions using YouTube Data APIs,YouTube functionality with a clean"
               ghLink="https://github.com/omjaiswal45/VideoTube"
               demoLink="https://video-tube-orpin.vercel.app/"
             />
@@ -35,12 +35,12 @@ function Projects() {
 
           <Col md={6}>
             <ProjectCard
-              imgPath={bitsOfCode}
+               imgPath="/certisure.gif"
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="A blog platform built with Next.js and Tailwind. Supports markdown writing with dark mode and live markdown rendering."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Certisure"
+              description="CertiSure is a robust and secure platform designed to streamline certificate generation and verification lightning-Fast Certificate Generation"
+              ghLink="https://github.com/omjaiswal45/CertiSure"
+              demoLink="https://certisure.vercel.app/"
             />
           </Col>
 
@@ -48,10 +48,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="An online code & markdown editor supporting HTML, CSS, JS and Markdown with instant preview, autosave, and GFM rendering."
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              title="ProjectPilot "
+              description="Effortlessly handle personal projects, delegate tasks to team members, and track progress."
+              ghLink="https://github.com/omjaiswal45/ProjectPilot"
+              demoLink=""
             />
           </Col>
 
@@ -59,10 +59,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="A plant disease classifier using PyTorch and ResNet34. Trained on a Kaggle dataset with 98% accuracy across 38 classes."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="securepost"
+              description="SecureAuthPost is a modern web application featuring robust user authentication and secure content sharing"
+              ghLink="https://github.com/omjaiswal45/secure-auth-post-app"
+              demoLink=""
             />
           </Col>
 
@@ -70,9 +70,10 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="AI For Social Good"
-              description="NLP-based project to detect suicidal ideation in online text, aimed at early mental health intervention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="PingSync"
+              description="Talko is a real-time chat application that enables users to connect instantly through seamless, secure messaging. With fast communication, clean UI, and reliable socket-based interaction, Talko brings conversations to life"
+              ghLink="https://github.com/omjaiswal45/mern-chat-app"
+              demoLink=""
             />
           </Col>
 
@@ -80,9 +81,10 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Emotion Detection"
-              description="Face recognition and emotion classification using OpenCV, Keras and TensorFlow trained on FER-2013 dataset."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title=" Crudify"
+              description="Crudify is a full-stack web application that allows users to Create, Read, Update, and Delete data seamlessly. Built with efficiency and scalability in mind, it offers a smooth user interface and powerful backend"
+              ghLink="https://github.com/omjaiswal45/CRUD"
+              demoLink=""
             />
           </Col>
         </Row>
