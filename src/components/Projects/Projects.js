@@ -51,7 +51,7 @@ function Projects() {
               title="ProjectPilot "
               description="Effortlessly handle personal projects, delegate tasks to team members, and track progress."
               ghLink="https://github.com/omjaiswal45/ProjectPilot"
-              demoLink=""
+              demoLink="https://project-pilot-om-jaiswals-projects-56697ee4.vercel.app/"
             />
           </Col>
 
@@ -68,12 +68,12 @@ function Projects() {
 
           <Col md={6}>
             <ProjectCard
-              imgPath={suicide}
+               imgPath="/vaanisetu-1.gif"
               isBlog={false}
-              title="PingSync"
+              title="VaaniSetu"
               description="Talko is a real-time chat application that enables users to connect instantly through seamless, secure messaging. With fast communication, clean UI, and reliable socket-based interaction, Talko brings conversations to life"
-              ghLink="https://github.com/omjaiswal45/mern-chat-app"
-              demoLink=""
+              ghLink="https://github.com/omjaiswal45/VaaniSetu"
+              demoLink="https://chat-app-qjn5.onrender.com/login"
             />
           </Col>
 
